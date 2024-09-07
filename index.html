@@ -79,7 +79,6 @@
             margin-right: auto;
         }
 
-
         .content {
             display: flex;
             justify-content: space-around;
@@ -118,6 +117,56 @@
             text-align: center;
             padding: 20px 0;
         }
+
+        .contact {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 1200px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .contact h2 {
+            margin-bottom: 20px;
+        }
+
+        .contact p {
+            line-height: 1.6;
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact input, .contact textarea {
+            width: 100%;
+            max-width: 500px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .contact button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .contact button:hover {
+            background-color: #555;
+        }
     </style>
 </head>
 <body>
@@ -126,6 +175,7 @@
             <a href="#manga">漫画介绍</a>
             <a href="#anime">动画介绍</a>
             <a href="#forum">讨论区</a>
+            <a href="#contact">联系我们</a>
         </nav>
     </header>
 
@@ -168,6 +218,17 @@
                 <a href="#">进入讨论</a>
             </div>
         </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>联系我们</h2>
+        <p>如果您有任何问题或建议，欢迎通过以下方式联系我们：</p>
+        <form>
+            <input type="text" placeholder="您的姓名" required>
+            <input type="email" placeholder="您的邮箱" required>
+            <textarea placeholder="您的留言" rows="5" required></textarea>
+            <button type="submit">提交</button>
+        </form>
     </section>
 
     <footer>
